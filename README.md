@@ -1,2 +1,2 @@
 # Dice
-Use AVR microcontroller to simulate a dice throw. Using an accelerator to trigger the function and to add salt to the random function
+Use AVR microcontroller to simulate a dice throw. Using an accelorometer to shake the dice and to add salt to the random function
