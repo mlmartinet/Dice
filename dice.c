@@ -32,10 +32,10 @@ int main(void){
 
   while (1)
 	  {
-//Flash lights to make you think it's thinking.  Also acts as a test to make sure all LEDs are functioning.
+//Roll the dice
 	  if ((PINC & (1<<PC5)) == 0)
 	{
-		while(i < 10){
+		while(i < 10){   //Flash lights to make you think it's thinking.  Also acts as a test to make sure all LEDs are functioning.
 		  DICE1 |= 0x7f;
 	   	  _delay_ms(30);
 	   	  DICE2 |= 0x7F;
@@ -51,7 +51,8 @@ int main(void){
 	}
 
 	  else {
-		  	  i = 0;
+		  	  i = 0; //reset roll counter
+		  	  //display dice
 		  	  DICE1 = dice[die1];
 		  	  DICE2 = dice[die2];
 		   }
